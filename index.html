@@ -3,39 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>World Clock by Margaret Cezar</title>
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
+      <h1>World 🌏 Clock</h1>
 
-      <select>
-        <option value="city">Select a city</option>
-        <option value="Tokyo">Tokyo</option>
+      <label for="city-select"></label>
+      <select name="city-select" id="city-select">
+        <option value="">Select a city</option>
+        <option value="America/Los Angeles">Los Angeles</option>
         <option value="New York">New York</option>
-        <option value="Sydney">Sydney</option>
+        <option value="Australia/Sydney">Sydney</option>
         <option value="London">London</option>
         <option value="Paris">Paris</option>
       </select>
 
       <div class="city">
-        <h2>Los Angeles ⛲</h2>
-        <div class="date">August 24, 2026</div>
-        <div class="time">12:15:30 AM</div>
+        <div>
+          <h2>Los Angeles 🩴</h2>
+          <div class="date">August 24, 2026</div>
+        </div>
+        <div class="time">12:15:30 <small>PM</small></div>
       </div>
 
       <div class="city">
-        <h2>Switzerland 🇨🇭</h2>
-        <div class="date">May 24, 2026</div>
-        <div class="time">1:15:30 PM</div>
+        <div>
+          <h2>Sydney 🦘</h2>
+          <div class="date">May 24, 2026</div>
+        </div>
+        <div class="time">1:15:30 <small>PM</small></div>
       </div>
     </div>
 
+    <images>
+      <img src="images/la.jpg" alt="Los Angeles" />
+      <img src="images/sydney.jpg" alt="Sydney" />
+      <img src="images/london.jpg" alt="London" />
+      <img src="images/paris.jpg" alt="Paris" />
+    </images>
+
     <footer>
       This project was coded with ❤️ by Margaret Cezar and is
-      <a href="https://github.com/Margaret6556/world-clock">open-sourced</a> on
-      GitHub
+      <a
+        href="https://github.com/Margaret6556/world-clock"
+        target="_blank"
+        rel="noopener noreferrer"
+        >open-sourced</a
+      >
+      on GitHub
     </footer>
 
     <script src="javascript/index.js"></script>
