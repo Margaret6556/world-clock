@@ -18,40 +18,83 @@
   <body>
     <div class="container">
       <h1>World 🌏 Clock</h1>
+      <h3>Keep track of time across the globe.</h3>
 
       <select name="cityName" id="cityName">
         <option value="">~ Select a city ~</option>
-        <option value="America/Los_Angeles" id="los-angeles">Los Angeles</option>
-        <option value="America/New_York" -d="newyork">New York</option>
-        <option value="Australia/Sydney" id="sydney">Sydney</option>
-        <option value="Europe/London" id="london">London</option>
-        <option value="Europe/Paris" id="paris">Paris</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="America/New_York">New York</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Paris">Paris</option>
       </select>
 
-      <div class="cities">
-        <div>
-          <h2></h2>
-       <div class="date" id="date"></div>
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time" id="time"></div>
-      </div>
-
-       <div class="cities">
-        <div>
-          <h2> </h2>
-          <div class="date" id="date"></div>
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time" id="time"></div>
-      </div>
 
+        <div class="city" id="newyork">
+          <div>
+            <h2>New York</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="london">
+          <div>
+            <h2>London</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container1">
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img1" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img2" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img3" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img4" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img5" />
+    </div>
+    <div class="image-container2">
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img1" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img2" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img3" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img4" />
+      <img src="/assets/Bokeh effect_MC3.jpg" alt="Bokeh effect" alt="img5" />
+    </div>
 
     <footer>
       This project was coded with ❤️ by Margaret Cezar and is
-    <a href="https://github.com/Margaret6556/world-clock"
-    target="_blank"
-    rel="noopener noreferrer">open-sourced</a
->
-on GitHub
+      <a
+        href="https://github.com/Margaret6556/world-clock"
+        target="_blank"
+        rel="noopener noreferrer"
+        >open-sourced</a
+      >
+      on GitHub.
     </footer>
 
     <script src="javascript/index.js"></script>
