@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
     <title>World Clock by Margaret Cezar</title>
@@ -17,42 +19,39 @@
     <div class="container">
       <h1>World 🌏 Clock</h1>
 
-      <label for="city-select"></label>
-      <select name="city-select" id="city-select">
-        <option value="">Select a city</option>
-        <option value="America/Los Angeles">Los Angeles</option>
-        <option value="New York">New York</option>
-        <option value="Australia/Sydney">Sydney</option>
-        <option value="London">London</option>
-        <option value="Paris">Paris</option>
+      <select name="cityName" id="cityName">
+        <option value="">~ Select a city ~</option>
+        <option value="America/Los_Angeles" id="los-angeles">Los Angeles</option>
+        <option value="America/New_York" -d="newyork">New York</option>
+        <option value="Australia/Sydney" id="sydney">Sydney</option>
+        <option value="Europe/London" id="london">London</option>
+        <option value="Europe/Paris" id="paris">Paris</option>
       </select>
 
-      <div class="city">
+      <div class="cities">
         <div>
-          <h2>Los Angeles 🩴</h2>
-          <div class="date">August 24, 2026</div>
+          <h2></h2>
+       <div class="date" id="date"></div>
         </div>
-        <div class="time">12:15:30 <small>PM</small></div>
+        <div class="time" id="time"></div>
       </div>
 
-      <div class="city">
+       <div class="cities">
         <div>
-          <h2>Sydney 🦘</h2>
-          <div class="date">May 24, 2026</div>
+          <h2> </h2>
+          <div class="date" id="date"></div>
         </div>
-        <div class="time">1:15:30 <small>PM</small></div>
+        <div class="time" id="time"></div>
       </div>
-    </div>
+
 
     <footer>
       This project was coded with ❤️ by Margaret Cezar and is
-      <a
-        href="https://github.com/Margaret6556/world-clock"
-        target="_blank"
-        rel="noopener noreferrer"
-        >open-sourced</a
-      >
-      on GitHub
+    <a href="https://github.com/Margaret6556/world-clock"
+    target="_blank"
+    rel="noopener noreferrer">open-sourced</a
+>
+on GitHub
     </footer>
 
     <script src="javascript/index.js"></script>
